@@ -48,7 +48,7 @@ class simpleServo:
     def write_angle(self, degrees=None):
         degrees = degrees // 1
         pulse_range = self.max_us - self.min_us
-        self.us = self.mins_us + (pulse_range * degrees) // self.angle
+        self.us = self.min_us + (pulse_range * degrees) // self.angle
         self.write_us(self.us)
         
     #call function to stop the servo beingdriven    
