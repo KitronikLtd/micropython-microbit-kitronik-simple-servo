@@ -1,5 +1,5 @@
 # microbit-module: KitronikSimpleServo@1.0.0
-# Copyright (c) Kitronik Ltd 2019. 
+# Copyright (c) Kitronik Ltd 2021. 
 #
 # The MIT License (MIT)
 #
@@ -25,7 +25,7 @@ from microbit import *
 
 class simpleServo:
     #Simple Servo module is used with the 5673 - Simple Servo board
-    #The servo connections to the BBC micro:bit on this product are pins 8 (servo1),15 (servo2) and 16 (servo3)
+    #The servo connections to the BBC micro:bit on this product are pins 8 (servo1), 15 (servo2) and 16 (servo3)
     #initalise servo pin with frequency and time period
     def __init__(self, pin, freq=50, min_us=700, max_us=2300, angle=180):
         self.pin = pin
